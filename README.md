@@ -1,6 +1,49 @@
-# django-project
+# FoodApp
 
-FoodApp is a simple web application built with Django that allows users to view, create, update, and delete food items. This project is part of a web development course and is intended to showcase knowledge of Django's functionality, including models, views, templates, and forms.
+FoodApp is a Django web application that allows users to manage a collection of food items. Users can create, view, update, and delete items in their collection. Each food item has a name, description, price, and an image.
+
+## Features
+
+- User registration and login
+- User-specific food item management
+- Create, read, update, and delete (CRUD) operations for food items
+- Class-based views for creating, updating, and deleting items
+- Function-based views for index and detail pages
+
+## Installation
+1. Clone the repository:
+
+   git clone https://github.com/yourusername/FoodApp.git
+
+2. Create a virtual environment:
+
+   cd FoodApp
+   python -m venv venv
+
+3. Activate the virtual environment:
+
+   - On macOS and Linux:
+
+     source venv/bin/activate
+
+   - On Windows:
+
+     venv\Scripts\activate.bat
+
+4. Install the required packages:
+
+   pip install -r requirements.txt
+
+5. Apply migrations:
+
+   python manage.py migrate
+
+6. Create a superuser:
+
+   python manage.py createsuperuser
+
+
+
 
 Key aspects of the project include:
 
