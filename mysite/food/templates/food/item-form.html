@@ -1,18 +1,24 @@
 {% extends 'food/base.html' %}
+
 {% block body %}
 <div class="container">
     <div class="row">
+        <!-- Define a card for the add item form -->
         <div class="col-md-3 offset-md-4">
             <div class="card">
+                <!-- Card header with title -->
                 <div class="card-header text-white bg-info">
                     <div clas="card-title">
                         Add an item
                     </div>    
                 </div>
+                <!-- Card body containing the form -->
                 <div class="card-body">
                     <form method="POST">
                         {% csrf_token %}
+                        <!-- Render the form fields -->
                         {{ form }}
+                        <!-- Add button to submit the form -->
                         <button class="btn btn-info" type="submit">Add</button>
                     </form>                    
                 </div>

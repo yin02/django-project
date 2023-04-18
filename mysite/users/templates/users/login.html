@@ -4,20 +4,25 @@
 
 <div class="container mt-5">
     <div class="row justify-content-center">
+        <!-- Define a card for the login form -->
         <div class="col-md-6">
             <div class="card">
+                <!-- Card header with title -->
                 <div class="card-header text-white bg-info">
                     <h5 class="card-title mb-0">Login</h5>
                 </div>
+                <!-- Card body containing the form -->
                 <div class="card-body">
                     <form method="POST">
                         {% csrf_token %}
+                        <!-- Iterate through form fields and render them with labels -->
                         {% for field in form %}
                             <div class="form-group">
                                 <label for="{{ field.id_for_label }}">{{ field.label }}</label>
                                 {{ field }}
                             </div>
                         {% endfor %}
+                        <!-- Add button to submit the form -->
                         <button type="submit" class="btn btn-info">Login</button>
                     </form>
                 </div>
@@ -27,10 +32,3 @@
 </div>
 
 {% endblock %}
-
-
-
-
-
-
-

@@ -1,5 +1,8 @@
+<!-- Template for deleting a food item -->
 <form method="POST">
     {% csrf_token %}
+    <!-- Display a confirmation message for deleting the specified food item -->
     <h2>Are you sure you want to delete {{ item.item_name }}</h2>
+    <!-- Provide a button for the user to confirm the deletion -->
     <button type="submit">Confirm</button>
 </form>
